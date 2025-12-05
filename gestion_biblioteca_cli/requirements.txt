@@ -1,0 +1,12 @@
+# Gestión de Biblioteca - Requisitos de Python
+# Sin dependencias externas - proyecto usa solo librerías estándar
+# Python 3.10+
+
+# Librerías estándar incluidas (no necesitan instalación):
+# - json: Serialización de datos
+# - pathlib: Manejo de rutas (multiplataforma)
+
+# Para desarrollo y testing (opcional):
+# pytest>=7.0 - Para tests unitarios
+# black>=22.0 - Formateador de código
+# flake8>=4.0 - Linter

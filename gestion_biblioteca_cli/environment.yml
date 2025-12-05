@@ -1,0 +1,6 @@
+name: gestion_biblioteca
+channels:
+  - defaults
+dependencies:
+  - python=3.10
+prefix: C:\Users\heri-\miniconda3\envs\gestion_biblioteca

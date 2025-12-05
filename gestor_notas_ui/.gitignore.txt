@@ -1,0 +1,16 @@
+# Archivos temporales de Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Carpeta de compilación de PyInstaller
+build/
+dist/
+*.spec
+
+# Carpeta de datos generada por la app
+data/
+
+# Archivos del sistema o del entorno
+.DS_Store
+Thumbs.db
