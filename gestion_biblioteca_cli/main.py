@@ -12,7 +12,7 @@ from modelos import ValidationError
 def menu() -> None:
     """
     Muestra el menú principal de opciones al usuario.
-    
+
     Imprime un menú formateado con las 7 opciones disponibles
     en la aplicación de gestión de biblioteca.
     """
@@ -32,17 +32,18 @@ def menu() -> None:
 """
     )
 
+
 def obtener_opcion_menu(opciones_validas: list = None) -> str:
     """
     Obtiene y valida la opción ingresada por el usuario.
-    
+
     Continúa pidiendo entrada hasta que el usuario ingrese
     una opción válida.
-    
+
     Args:
         opciones_validas (list): Lista de strings con opciones válidas.
                                 Por defecto: ["1", "2", "3", "4", "5", "6", "7"]
-    
+
     Returns:
         str: La opción válida ingresada por el usuario
     """
@@ -54,29 +55,31 @@ def obtener_opcion_menu(opciones_validas: list = None) -> str:
         if opcion in opciones_validas:
             return opcion
         print("Opción no válida. Intente de nuevo.")
-    
+
+
 def obtener_año_valido() -> int:
     """
     Obtiene y valida un año de publicación del usuario.
-    
+
     Continúa pidiendo entrada hasta que el usuario ingrese
     un año válido entre 1000 y 2100.
-    
+
     Returns:
         int: Año validado en el rango [1000, 2100]
     """
-        try:
-            año = int(input("Año: "))
-            if 1000 <= año <= 2100:
-                return año
-            print("Año debe estar entre 1000 y 2100")
-        except ValueError:
-            print("Debe ingresar un número válido")
+    try:
+        año = int(input("Año: "))
+        if 1000 <= año <= 2100:
+            return año
+        print("Año debe estar entre 1000 y 2100")
+    except ValueError:
+        print("Debe ingresar un número válido")
+
 
 def main() -> None:
     """
     Función principal que ejecuta el programa.
-    
+
     Inicializa el gestor de biblioteca y ejecuta el bucle
     principal de la interfaz de usuario. Maneja todas las opciones
     del menú y proporciona manejo de errores.
